@@ -1,0 +1,20 @@
+<ion-card class="heigt100">
+  <ion-card-header>
+     <ion-card-title>
+        <ion-label position="floating">Назва газети: </ion-label>
+        <ion-input [value]="catalog.name" #Inputname></ion-input>
+     </ion-card-title>
+     <ion-card-subtitle>
+        <ion-label position="floating">Номер: </ion-label>
+        <ion-input [value]="catalog.id" #Inputid></ion-input>
+     </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+     <ion-label position="floating">Дата виходу: </ion-label>
+     <ion-input [value]="catalog.release_date" #InputDate></ion-input>
+
+     <ion-label position="floating">Кількість сторінок: </ion-label>
+     <ion-input [value]="catalog.pages" #Inputpg></ion-input>
+  </ion-card-content>
+  <ion-button (click)="save(Inputname.value, Inputid.value, InputDate.value, Inputpg.value)">Зберігти</ion-button>
+</ion-card>

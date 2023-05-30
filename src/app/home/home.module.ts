@@ -8,7 +8,6 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MyformComponent } from '../myform/myform.component';
 import { ViewformComponent } from '../viewform/viewform.component';
-import { UpdateformComponent } from '../updateform/updateform.component';
 import { MyHeaderComponent } from '../my-header/my-header.component';
 @NgModule({
   imports: [
@@ -18,6 +17,6 @@ import { MyHeaderComponent } from '../my-header/my-header.component';
     HomePageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [HomePage,MyformComponent,ViewformComponent, UpdateformComponent,MyHeaderComponent]
+  declarations: [HomePage,MyformComponent,ViewformComponent,MyHeaderComponent]
 })
 export class HomePageModule {}
